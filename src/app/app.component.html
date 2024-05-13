@@ -1,0 +1,34 @@
+<body>
+  <div class="navbar">
+    <div class="left-side">
+      <span class="shop-name">Ducktopia</span>
+    </div>
+    <div class="right-side">
+      <a href="#">About Us</a>
+      <a href="#">Shop</a>
+      <a href="#">Contact</a>
+    </div>
+  </div>
+<div class="image-container">
+  <img src="assets/header.jpg" alt="Rubber Duck Shop Header" class="header-image">
+  <div class="image-text">Let's Enjoy Rubber Ducks.</div>
+</div>
+
+<h1>Get your favorite ones!</h1>
+
+<div class="items-container" *ngIf="data">
+  <div *ngFor="let item of data" class="item">
+    <h2>{{ item.ProductName }}</h2>
+    <img [src]="'assets/' + item.GraphicName" alt="{{ item.ProductName }}">
+    <p>Brand: {{ item.brand }}</p>
+    <p>Cost Price: {{ item.CostPrice }}</p>
+    <p>MSRP: {{ item.MSrP }}</p>
+    <p>Quantity on Hand: {{ item.QtyOnHand }}</p>
+    <p>Quantity on Back Order: {{ item.QtyOnBackOrder }}</p>
+    <p>Description: {{ item.Description }}</p>
+  </div>
+</div>
+<footer>
+  <p>&copy; 2024 Ducktopia. All Rights Reserved.</p>
+</footer>
+</body>

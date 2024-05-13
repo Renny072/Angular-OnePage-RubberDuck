@@ -1,0 +1,133 @@
+
+body {
+    background-color: rgb(243, 58, 58);
+    font-family: Comic Sans MS, Comic Sans, cursive;
+}
+
+.navbar {
+    background-color: #4a90e2;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 20px;
+  }
+  
+  .left-side {
+    display: flex;
+    align-items: center;
+    
+  }
+  
+  .shop-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 25px;
+  }
+  
+  .right-side {
+    font-size: 20px;
+    display: flex;
+    margin-right: 35px;
+  }
+  
+  .right-side a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+  }
+  
+  .right-side a:hover {
+    text-decoration: underline;
+  }
+
+.items-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; 
+  }
+
+.image-container {
+    position: relative;
+    text-align: center;
+  }  
+
+.header-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }  
+  
+  .image-text {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3vw;
+    font-weight: bold;
+    white-space: nowrap;
+  }
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 45px;
+  }
+  
+  .item {
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto; 
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.1);
+    max-width: 400px; 
+  }
+  
+  h2 {
+    color: #474747;
+    text-align: center;
+    font-size: 27px;
+  }
+  
+  img {
+    width: 230px;
+    height: 230px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 10px;
+  }
+  
+  p {
+    margin: 5px 0;
+    color: #666;
+    text-align: center;
+    font-size: 17px;
+  }
+
+  footer {
+    background-color: #4a90e2;
+    color: white;
+    text-align: center;
+    padding: 100px;
+  }
+
+  footer p {
+    font-size: 15px;
+  }
+  
+  /*responsible header text */
+  @media (max-width: 768px) {
+    .image-text {
+      font-size: 5vw; 
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .image-text {
+      font-size: 8vw; 
+    }
+  }  
+
+  
